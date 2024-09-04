@@ -1,25 +1,48 @@
-// function and scope Exampoles 
-const sun= function(a,b){
-    return a+b;
+// control flow  :condition and loops
+// 1. if else
+/*
+if (true) {
+    console.log('true');
+} else {
+    console.log('false');
+}
+*/
+/*
+let temperature =20;
+if (temperature > 30) {
+    console.log('It is hot outside');
+} else if (temperature >= 20) {
+    console.log('It is good wether outside');
+} else {
+    console.log('It is very cold outside');
+}*/
+// 2. switch case
+/*
+let role='Khiro';
+switch(role){
+    case 'guest':
+        console.log('Guest User');
+        break;
+    case 'admin':
+        console.log('Admin  User');
+        break;
+    default:
+        console.log('Unknown User');
+}
+*/
+// 3. for loop
+/*
+console.log('--------------------------------For loop-----------------------------');
+for (let i = 0; i < 5; i++) {
+    console.log('Hello World', i);
+}
+*/
+// 4. while loop
+console.log('--------------------------------While loop-----------------------------');
+let time = 0;
+while (time <= 10) {
+    console.log(`Time is :  ${time},Second`);
+    time++;
 }
 
-console.log(sun(2,3));
 
-// this is multply function
-const multiply = (a,b)=>a*b;
-console.log(multiply(2,3));
-
-// local scope and global scope
-console.log('local scope and global scope');
-
-let globalVar = 'This is global variable';
-
-function scopeChack(){
-    let localVar = 'This is local variable';
-    console.log(globalVar);
-    console.log(localVar);
-    console.log('End of scopeChack function');
-}
-scopeChack();
-// console.log(globalVar);
-// console.log(localVar); // this will give error because localVar is local variable
