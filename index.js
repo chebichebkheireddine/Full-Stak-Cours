@@ -1,48 +1,44 @@
-// control flow  :condition and loops
-// 1. if else
-/*
-if (true) {
-    console.log('true');
-} else {
-    console.log('false');
-}
-*/
-/*
-let temperature =20;
-if (temperature > 30) {
-    console.log('It is hot outside');
-} else if (temperature >= 20) {
-    console.log('It is good wether outside');
-} else {
-    console.log('It is very cold outside');
-}*/
-// 2. switch case
-/*
-let role='Khiro';
-switch(role){
-    case 'guest':
-        console.log('Guest User');
-        break;
-    case 'admin':
-        console.log('Admin  User');
-        break;
-    default:
-        console.log('Unknown User');
-}
-*/
-// 3. for loop
-/*
-console.log('--------------------------------For loop-----------------------------');
-for (let i = 0; i < 5; i++) {
-    console.log('Hello World', i);
-}
-*/
-// 4. while loop
-console.log('--------------------------------While loop-----------------------------');
-let time = 0;
-while (time <= 10) {
-    console.log(`Time is :  ${time},Second`);
-    time++;
-}
+// Array and Object 
+// Araay 
+let frutes = ['Apple', 'banana', 'mango', 'orange', 'grapes', 'watermelon'];
+console.log(frutes);
+// The Top Operation in Array
+// 1. Push
+frutes.push('pineapple');
+console.log(frutes);
+// 2. Pop
+frutes.pop();
+console.log(frutes);
+// 3. Shift
+let firtFrutes=frutes.shift();
+console.log(firtFrutes);
+console.log(frutes);
+// 4. Unshift : Add the element in the first position
+frutes.unshift('kiwi');
+console.log(frutes);
+// 5. IndexOf
+let frutSearch = 'mango';
+console.log(`The Index of "${frutSearch}" is :${frutes.indexOf(frutSearch)}`);
+// 6. Splice
+let index = frutes.indexOf('orange');
+frutes.splice(index,1, 'papaya');
+console.log(frutes);
+// 7. Slice
+let newFrutes = frutes.slice(1,3);
+console.log(newFrutes);
+// Object
+console.log('----------------------------Object-----------------------------');
 
+let perosn={
+    name:'Rajesh',
+    age: 25,
+    city: 'Bangalore',
+    isStudent: true,
+}
+// Access the Object with 2 ways @chebichebkheireddine
+console.log(perosn.name);
+console.log(perosn['age']);
+console.log(perosn);
+//  After this we Have The String Method : Like toUpperCase .... , || and Boolean Method : Boolean expression
+// All this is Clear in Ja for Me You can find in my repo of JS cousr
 
